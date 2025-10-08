@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../../assets/logo.png'
 import Github from '../../assets/icons8-github-logo-30.png'
+import { Link } from 'react-router';
 
 const Navbar = () => {
     return (
@@ -14,17 +15,17 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Apps</a></li>
+                            <Link to={'/'}>  <li><a>Home</a></li></Link>
+                           <Link to={'/Apps'}><li><a>Apps</a></li></Link>
                             <li><a>Installation</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"><img className='w-[40px]' src={Logo} alt="" />HERO.IO</a>
+                   <Link to={'/'}> <a className="btn btn-ghost text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"><img className='w-[40px]' src={Logo} alt="" />HERO.IO</a></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>Apps</a></li>
+                          <Link to={'/'}>  <li><a>Home</a></li></Link>
+                           <Link to={'/Apps'}><li><a>Apps</a></li></Link>
                         <li><a>Installation</a></li>
                     </ul>
                 </div>
