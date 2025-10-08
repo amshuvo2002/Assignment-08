@@ -26,27 +26,27 @@ const Bannar = () => {
         </div>
        </div>
 
-       <div className='h-[350px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2]  text-white p-20'>
+       <div className='md:h-[350px] h-[210px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2]  text-white p-5 md:p-20'>
 
 
-              <h1 className='text-4xl font-bold text-center mb-10'>Trusted by Millions, Built for You</h1>
+              <h1 className='md:text-4xl text-2xl font-bold text-center mb-4 md:mb-10'>Trusted by Millions, Built for You</h1>
         
 
             <div className='flex justify-center'>
-                <div className='flex justify-between gap-20'>
+                <div className='flex justify-between md:gap-20'>
                     <div className='text-center'>
                         <p className='text-gray-200' >Total Downloads</p>
-                        <h1 className='font-bold text-6xl'>29.6M</h1>
+                        <h1 className='font-bold md:text-6xl text-2xl'>29.6M</h1>
                         <p className='text-gray-200'>21% more than last month</p>
                     </div>
                     <div  className='text-center'>
                         <p className='text-gray-200'>Total Reviews</p>
-                        <h1  className='font-bold text-6xl'>906K</h1>
+                        <h1  className='font-bold md:text-6xl text-2xl'>906K</h1>
                         <p className='text-gray-200'>46% more than last month</p>
                     </div>
                     <div  className='text-center'>
                         <p className='text-gray-200'>Active Apps</p>
-                        <h1  className='font-bold text-6xl'>132+</h1>
+                        <h1  className='font-bold md:text-6xl text-2xl'>132+</h1>
                         <p className='text-gray-200'>31 more will Launch</p>
                     </div>
                 </div>
