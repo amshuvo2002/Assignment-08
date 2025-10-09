@@ -1,6 +1,6 @@
 import React from 'react';
 import Bannar from '../Bannar/Bannar';
-import { useLoaderData } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 import BanarApp from '../Banar-App/BanarApp';
 import Allapps from '../All-Apps/Allapps';
 
@@ -25,7 +25,7 @@ const Home = () => {
                 data.map((singleApp)=><BanarApp key={singleApp.id} singleApp={singleApp}></BanarApp>)
             }
           </div>
-          <div className='text-center pb-10'> <button className="btn btn-primary bg-gradient-to-r from-[#632EE3] to-[#9F62F2] mt-2">Show All</button></div>
+          <Link to={'/Apps'}><div className='text-center pb-10'> <button className="btn btn-primary bg-gradient-to-r from-[#632EE3] to-[#9F62F2] mt-2">Show All</button></div></Link>
         </div>
     );
 };

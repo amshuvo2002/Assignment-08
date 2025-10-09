@@ -17,16 +17,16 @@ const Navbar = () => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <Link to={'/'}>  <li><a>Home</a></li></Link>
                            <Link to={'/Apps'}><li><a>Apps</a></li></Link>
-                            <li><a>Installation</a></li>
+                           <Link to={'/Installation'}> <li><a>Installation</a></li></Link>
                         </ul>
                     </div>
                    <Link to={'/'}> <a className="btn btn-ghost text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"><img className='w-[40px]' src={Logo} alt="" />HERO.IO</a></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                          <Link to={'/'}>  <li><a>Home</a></li></Link>
-                           <Link to={'/Apps'}><li><a>Apps</a></li></Link>
-                        <li><a>Installation</a></li>
+                        <Link to={'/'}>  <li><a>Home</a></li></Link>
+                        <Link to={'/Apps'}><li><a>Apps</a></li></Link>
+                        <Link to={'/Installation'}> <li><a>Installation</a></li></Link>
                     </ul>
                 </div>
                 <div className="navbar-end">

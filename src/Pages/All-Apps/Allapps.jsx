@@ -3,7 +3,7 @@ import Star from '../../assets/icon-ratings.png'
 import Download from '../../assets/icon-downloads.png'
 
 const Allapps = () => {
-    const [apps, setApps] = useState([]); // State declare
+    const [apps, setApps] = useState([]); 
 
     useEffect(() => {
         fetch("/AllAppsData.json")
