@@ -342,23 +342,23 @@
       {"name": "5 star", "count": 1800000}
     ]
   },
-  {
-    "image": "https://cdn-icons-png.flaticon.com/512/196/196578.png",
-    "title": "PayPal: Send & Receive Money",
-    "companyName": "PayPal Holdings, Inc.",
-    "id": 20,
-    "description": "Send and receive payments securely, shop online, and manage your money easily. Link bank accounts and cards, transfer funds internationally, and track transactions. PayPal provides safe and convenient financial services for personal and business use. Enjoy buyer and seller protection, instant notifications, and a reliable digital wallet to handle all your money needs effortlessly.",
-    "size": 80,
-    "reviews": "180K",
-    "ratingAvg": 4.4,
-    "downloads": "1B",
-    "ratings": [
-      {"name": "1 star", "count": 70000},
-      {"name": "2 star", "count": 60000},
-      {"name": "3 star", "count": 150000},
-      {"name": "4 star", "count": 600000},
-      {"name": "5 star", "count": 950000}
-    ]
-  }
+{
+  "image": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
+  "title": "Google Photos: Cloud Gallery",
+  "companyName": "Google LLC",
+  "id": 20,
+  "description": "Store, view, and share your photos and videos effortlessly. Google Photos offers automatic backup, smart organization, and powerful search features. Create albums, collages, and animations while keeping your memories safe. Access from any device and relive your moments easily with Google’s intelligent photo service.",
+  "size": 90,
+  "reviews": "210K",
+  "ratingAvg": 4.6,
+  "downloads": "5B",
+  "ratings": [
+    {"name": "1 star", "count": 70000},
+    {"name": "2 star", "count": 50000},
+    {"name": "3 star", "count": 200000},
+    {"name": "4 star", "count": 700000},
+    {"name": "5 star", "count": 1600000}
+  ]
+}
 ]
 
