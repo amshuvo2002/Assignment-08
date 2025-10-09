@@ -4,17 +4,17 @@
     "title": "Facebook: Social Media",
     "companyName": "Meta Platforms, Inc.",
     "id": 1,
-    "description": "Connect with friends, share updates, photos and videos, and explore news.",
+    "description": "Connect with friends, share updates, photos, and videos. Explore trending news, join groups and events, and engage with communities. Stay updated with friends and family, follow pages you love, and enjoy social networking with ease. Discover new interests, connect worldwide, and enjoy interactive experiences on Facebook.",
     "size": 120,
-    "reviews": 5000000,
+    "reviews": "500K",
     "ratingAvg": 4.2,
     "downloads": "5B",
     "ratings": [
-      { "name": "1 star", "count": 500000 },
-      { "name": "2 star", "count": 200000 },
-      { "name": "3 star", "count": 800000 },
-      { "name": "4 star", "count": 1500000 },
-      { "name": "5 star", "count": 2000000 }
+      {"name": "1 star", "count": 500000},
+      {"name": "2 star", "count": 200000},
+      {"name": "3 star", "count": 800000},
+      {"name": "4 star", "count": 1500000},
+      {"name": "5 star", "count": 2000000}
     ]
   },
   {
@@ -22,17 +22,17 @@
     "title": "YouTube: Watch Videos",
     "companyName": "Google LLC",
     "id": 2,
-    "description": "Watch, upload, and share videos, subscribe to channels, and create playlists.",
+    "description": "Watch, upload, and share videos on any topic you like. Subscribe to channels, create playlists, and engage with content creators. Explore trending videos, live streams, and recommendations tailored to your interests. Comment, like, and share videos with friends while enjoying endless entertainment and learning opportunities on YouTube.",
     "size": 150,
-    "reviews": 8000000,
+    "reviews": "800K",
     "ratingAvg": 4.5,
     "downloads": "7B",
     "ratings": [
-      { "name": "1 star", "count": 300000 },
-      { "name": "2 star", "count": 200000 },
-      { "name": "3 star", "count": 700000 },
-      { "name": "4 star", "count": 2500000 },
-      { "name": "5 star", "count": 4200000 }
+      {"name": "1 star", "count": 300000},
+      {"name": "2 star", "count": 200000},
+      {"name": "3 star", "count": 700000},
+      {"name": "4 star", "count": 2500000},
+      {"name": "5 star", "count": 4200000}
     ]
   },
   {
@@ -40,17 +40,17 @@
     "title": "Instagram: Share Photos",
     "companyName": "Meta Platforms, Inc.",
     "id": 3,
-    "description": "Share photos and videos, follow friends and celebrities, and explore content.",
+    "description": "Share photos and videos, follow friends, celebrities, and trends. Explore stories, reels, and IGTV content. Engage with communities, discover creative ideas, and connect worldwide. Express yourself with filters, edits, and captions, while enjoying a visually rich social media platform that celebrates creativity and connection.",
     "size": 130,
-    "reviews": 6000000,
+    "reviews": "600K",
     "ratingAvg": 4.4,
     "downloads": "4B",
     "ratings": [
-      { "name": "1 star", "count": 200000 },
-      { "name": "2 star", "count": 150000 },
-      { "name": "3 star", "count": 500000 },
-      { "name": "4 star", "count": 2000000 },
-      { "name": "5 star", "count": 3250000 }
+      {"name": "1 star", "count": 200000},
+      {"name": "2 star", "count": 150000},
+      {"name": "3 star", "count": 500000},
+      {"name": "4 star", "count": 2000000},
+      {"name": "5 star", "count": 3250000}
     ]
   },
   {
@@ -58,17 +58,17 @@
     "title": "TikTok: Create Videos",
     "companyName": "ByteDance",
     "id": 4,
-    "description": "Create and watch short videos, follow creators, and explore trending content.",
+    "description": "Create and watch short videos with music, effects, and trends. Follow creators, explore viral content, and join challenges. Share your creativity, enjoy entertaining clips, and engage with a global community. TikTok makes content creation easy, fun, and interactive for all ages, allowing users to discover, laugh, and learn.",
     "size": 95,
-    "reviews": 4000000,
+    "reviews": "400K",
     "ratingAvg": 4.3,
     "downloads": "3B",
     "ratings": [
-      { "name": "1 star", "count": 150000 },
-      { "name": "2 star", "count": 100000 },
-      { "name": "3 star", "count": 400000 },
-      { "name": "4 star", "count": 1200000 },
-      { "name": "5 star", "count": 2150000 }
+      {"name": "1 star", "count": 150000},
+      {"name": "2 star", "count": 100000},
+      {"name": "3 star", "count": 400000},
+      {"name": "4 star", "count": 1200000},
+      {"name": "5 star", "count": 2150000}
     ]
   },
   {
@@ -76,17 +76,17 @@
     "title": "WhatsApp: Chat & Call",
     "companyName": "Meta Platforms, Inc.",
     "id": 5,
-    "description": "Instant messaging, voice, and video calls with friends and family worldwide.",
+    "description": "Instant messaging and voice/video calls with friends and family worldwide. Share text, images, videos, and documents securely. Create groups, broadcast messages, and enjoy end-to-end encryption for privacy. Stay connected, communicate effortlessly, and manage conversations with a user-friendly interface, making WhatsApp a reliable messaging platform for everyone.",
     "size": 70,
-    "reviews": 7000000,
+    "reviews": "700K",
     "ratingAvg": 4.6,
     "downloads": "5B",
     "ratings": [
-      { "name": "1 star", "count": 100000 },
-      { "name": "2 star", "count": 80000 },
-      { "name": "3 star", "count": 400000 },
-      { "name": "4 star", "count": 2000000 },
-      { "name": "5 star", "count": 3500000 }
+      {"name": "1 star", "count": 100000},
+      {"name": "2 star", "count": 80000},
+      {"name": "3 star", "count": 400000},
+      {"name": "4 star", "count": 2000000},
+      {"name": "5 star", "count": 3500000}
     ]
   },
   {
@@ -94,17 +94,17 @@
     "title": "Spotify: Listen Music",
     "companyName": "Spotify Ltd.",
     "id": 6,
-    "description": "Stream music and podcasts, create playlists, and discover new artists.",
+    "description": "Stream music and podcasts from a huge library, create playlists, and discover new artists. Explore trending tracks, albums, and personalized recommendations. Enjoy curated playlists, offline playback, and high-quality audio. Spotify brings music, entertainment, and discovery together seamlessly for music lovers worldwide.",
     "size": 100,
-    "reviews": 3000000,
+    "reviews": "300K",
     "ratingAvg": 4.5,
     "downloads": "2B",
     "ratings": [
-      { "name": "1 star", "count": 50000 },
-      { "name": "2 star", "count": 40000 },
-      { "name": "3 star", "count": 150000 },
-      { "name": "4 star", "count": 800000 },
-      { "name": "5 star", "count": 2000000 }
+      {"name": "1 star", "count": 50000},
+      {"name": "2 star", "count": 40000},
+      {"name": "3 star", "count": 150000},
+      {"name": "4 star", "count": 800000},
+      {"name": "5 star", "count": 2000000}
     ]
   },
   {
@@ -112,17 +112,17 @@
     "title": "Twitter: Share Thoughts",
     "companyName": "Twitter, Inc.",
     "id": 7,
-    "description": "Share updates, follow news, trends, and join conversations worldwide.",
+    "description": "Share updates, thoughts, and news in real-time. Follow trends, join conversations, and engage with communities globally. Post tweets, images, videos, and threads easily. Stay informed with live news, explore interests, and connect with people who share your passions. Twitter enables fast, concise, and interactive communication worldwide.",
     "size": 85,
-    "reviews": 2500000,
+    "reviews": "250K",
     "ratingAvg": 4.0,
     "downloads": "1.5B",
     "ratings": [
-      { "name": "1 star", "count": 300000 },
-      { "name": "2 star", "count": 200000 },
-      { "name": "3 star", "count": 400000 },
-      { "name": "4 star", "count": 800000 },
-      { "name": "5 star", "count": 800000 }
+      {"name": "1 star", "count": 300000},
+      {"name": "2 star", "count": 200000},
+      {"name": "3 star", "count": 400000},
+      {"name": "4 star", "count": 800000},
+      {"name": "5 star", "count": 800000}
     ]
   },
   {
@@ -130,17 +130,17 @@
     "title": "Telegram: Fast Messaging",
     "companyName": "Telegram FZ-LLC",
     "id": 8,
-    "description": "Fast messaging app with end-to-end encryption, groups, and channels.",
+    "description": "Fast messaging app with secure, end-to-end encryption. Send text, voice, and video messages, create groups and channels, and share files of any type. Telegram allows easy communication, community building, and fast interaction with friends, colleagues, and global communities. Reliable, private, and versatile for all messaging needs.",
     "size": 65,
-    "reviews": 2000000,
+    "reviews": "200K",
     "ratingAvg": 4.4,
     "downloads": "1B",
     "ratings": [
-      { "name": "1 star", "count": 40000 },
-      { "name": "2 star", "count": 30000 },
-      { "name": "3 star", "count": 150000 },
-      { "name": "4 star", "count": 500000 },
-      { "name": "5 star", "count": 1300000 }
+      {"name": "1 star", "count": 40000},
+      {"name": "2 star", "count": 30000},
+      {"name": "3 star", "count": 150000},
+      {"name": "4 star", "count": 500000},
+      {"name": "5 star", "count": 1300000}
     ]
   }
 ]

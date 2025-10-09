@@ -1,16 +1,18 @@
 import React from 'react';
 import Star from '../../assets/icon-ratings.png'
 import Download from '../../assets/icon-downloads.png'
+import { Link } from 'react-router';
 const BanarApp = ({ singleApp }) => {
 
 
     return (
         <div>
-            <div className="card bg-base-100 md:w-75 mb-5 md:mb-0 shadow-sm pt-5">
+           <Link to={`/Apps/${singleApp.id}`}>
+                <div className="card bg-base-100 md:w-75 mb-5 md:mb-0 shadow-sm pt-5">
                 <figure>
                     <img className='w-2/3'
                         src={singleApp.image}
-                        alt="Shoes" />
+                        alt="Apps" />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title text-[#010313]">
@@ -22,6 +24,7 @@ const BanarApp = ({ singleApp }) => {
                     </div>
                 </div>
             </div>
+           </Link>
         </div>
     );
 };

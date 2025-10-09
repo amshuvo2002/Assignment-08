@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Star from '../../assets/icon-ratings.png'
 import Download from '../../assets/icon-downloads.png'
+import { Link } from "react-router";
 
 const Allapps = () => {
     const [apps, setApps] = useState([]); 
@@ -40,8 +41,10 @@ const Allapps = () => {
                 </div>
             </div>
 
-            <div className="md:grid grid-cols-4 gap-10 p-10 mx-auto">
+           
+               <div className="md:grid grid-cols-4 gap-10 p-10 mx-auto">
                 {apps.map((app) => (
+                <Link to={`/Apps/${app.id}`}>
                     <div className="card bg-base-100 md:w-75 mb-5 md:mb-0 shadow-sm pt-5">
                         <figure>
                             <img className='w-2/3'
@@ -58,8 +61,10 @@ const Allapps = () => {
                             </div>
                         </div>
                     </div>
+                    </Link>
                 ))}
             </div>
+           
         </div>
 
     );

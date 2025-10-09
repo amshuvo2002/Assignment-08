@@ -32,10 +32,10 @@ const Installation = () => {
                     </div>
                 </div>
             </div>
-            <div className='px-20'>
+            <div className='md:px-20 px-5'>
                
-                   <div className='flex justify-between items-center bg-white p-5 rounded-xl '>
-                        <div className='flex gap-5'>
+                   <div className='md:flex justify-between items-center shadow-xl gap-5 bg-white p-5 rounded-sm mb-10 '>
+                        <div className='md:flex gap-5'>
                             <div>  <img className='w-[100px]' src={App} alt="" /></div>
                             <div className='' >
                                 <h1 className='text-xl font-bold'>Forest: Focus for Productivity</h1>
@@ -47,10 +47,27 @@ const Installation = () => {
                             </div>
                         </div>
                         <div>
-                            <button className="btn btn-accent">Uninstall</button>
+                            <button className="btn btn-accent mt-5 md:mt-0 bg-[#00D390]">Uninstall</button>
                         </div>
                     </div>
-               
+
+
+                    <div className='md:flex justify-between items-center shadow-xl gap-5 bg-white p-5 rounded-sm mb-10 '>
+                        <div className='md:flex gap-5'>
+                            <div>  <img className='w-[100px]' src={App} alt="" /></div>
+                            <div className='' >
+                                <h1 className='text-xl font-bold'>Forest: Focus for Productivity</h1>
+                                <div className='flex justify-around mt-5'>
+                                    <div className='flex justify-between gap-2 p-2 rounded-sm text-[#00D390] bg-[#F1F5E8]'><img className='w-[20px]' src={Download} alt="" />{}</div>
+                                    <div className='flex justify-between gap-2 p-2 rounded-sm text-[#FF8811] bg-[#FFF0E1]'><img className='w-[20px]' src={Star} alt="" />{}</div>
+                                    <div className='flex justify-center items-center'><p className='font-semibold text-gray-400'>450 MB</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                           <button className="btn btn-accent mt-5 md:mt-0 bg-[#00D390]">Uninstall</button>
+                        </div>
+                    </div>
             </div>
         </div>
     );
