@@ -33,7 +33,7 @@ const Installation = () => {
           Explore All Trending Apps on the Market developed by us
         </p>
 
-        <div className="flex justify-between items-center mt-10">
+        <div className="md:flex justify-between items-center mt-10">
           <div className="text-2xl font-bold text-[#001931]">
             {allApps.length} Apps Found
           </div>

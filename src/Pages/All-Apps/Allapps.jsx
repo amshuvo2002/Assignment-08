@@ -82,7 +82,8 @@ const Allapps = () => {
             </Link>
           ))
         ) : (
-          <p className="text-center col-span-4 text-gray-500 text-xl">No apps found 😢</p>
+          <p className="text-center font-bold col-span-4 text-gray-500 text-4xl">OPPS!! APP NOT FOUND</p>
+          
         )}
       </div>
     </div>

@@ -5,32 +5,40 @@ import { Link } from 'react-router';
 
 const Navbar = () => {
     return (
-        <div >
+        <div>
             <div className="navbar bg-base-100 shadow-sm">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> 
+                            </svg>
                         </div>
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <Link to={'/'}>  <li><a>Home</a></li></Link>
-                           <Link to={'/Apps'}><li><a>Apps</a></li></Link>
-                           <Link to={'/Installation'}> <li><a>Installation</a></li></Link>
+                            <li><Link to={'/'}>Home</Link></li>
+                            <li><Link to={'/Apps'}>Apps</Link></li>
+                            <li><Link to={'/Installation'}>Installation</Link></li>
                         </ul>
                     </div>
-                   <Link to={'/'}> <a className="btn btn-ghost text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"><img className='w-[40px]' src={Logo} alt="" />HERO.IO</a></Link>
+                    <Link to={'/'} className="btn btn-ghost text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent flex items-center gap-2">
+                        <img className='w-[40px]' src={Logo} alt="Logo" /> HERO.IO
+                    </Link>
                 </div>
+
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <Link to={'/'}>  <li><a>Home</a></li></Link>
-                        <Link to={'/Apps'}><li><a>Apps</a></li></Link>
-                        <Link to={'/Installation'}> <li><a>Installation</a></li></Link>
+                        <li><Link to={'/'}>Home</Link></li>
+                        <li><Link to={'/Apps'}>Apps</Link></li>
+                        <li><Link to={'/Installation'}>Installation</Link></li>
                     </ul>
                 </div>
+
                 <div className="navbar-end">
-                    <a  onClick={() => window.open("https://github.com/amshuvo2002", "_blank")} className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className='w-[30px] invert text-white' src={Github} alt="" />Contribute</a>
+                    <button onClick={() => window.open("https://github.com/amshuvo2002", "_blank")} className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white flex items-center gap-2">
+                        <img className='w-[30px] invert' src={Github} alt="Github" /> Contribute
+                    </button>
                 </div>
             </div>
         </div>

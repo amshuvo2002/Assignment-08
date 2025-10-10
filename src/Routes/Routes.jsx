@@ -12,7 +12,7 @@ import AppDetails from '../Pages/AppDetails/AppDetails';
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     Component: Root,
     errorElement: <Error></Error>,
     children: [
@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/Apps/:id",
-        element: <AppDetails />,
+        Component: AppDetails,
         loader: () => fetch('/AllAppsData.json')
       }
 
