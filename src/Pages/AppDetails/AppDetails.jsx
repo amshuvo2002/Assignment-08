@@ -1,20 +1,23 @@
 import { Link, useLoaderData, useParams } from "react-router";
-import Star from '../../assets/icon-ratings.png'
-import Download from '../../assets/icon-downloads.png'
-import Like from '../../assets/icon-review.png'
-import AppError from '../../assets/App-Error.png'
+import Star from '../../assets/icon-ratings.png';
+import Download from '../../assets/icon-downloads.png';
+import Like from '../../assets/icon-review.png';
+import AppError from '../../assets/App-Error.png';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { useEffect, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 function AppDetails() {
   const data = useLoaderData();
   const { id } = useParams();
   const app = data.find(app => app.id === parseInt(id));
 
+  
   if (!app) {
     return (
-      <div className=" bg-gray-100 p-10">
+      <div className="bg-gray-100 p-10">
         <div>
-          <img className="w-[400px] mx-auto" src={AppError} alt="" />
+          <img className="w-[400px] mx-auto" src={AppError} alt="App Not Found" />
         </div>
         <div className="text-center mt-5">
           <h1 className="text-4xl font-bold">OPPS!! APP NOT FOUND</h1>
@@ -32,6 +35,32 @@ function AppDetails() {
   }
 
 
+  useEffect(() => {
+    localStorage.setItem("allAppsData", JSON.stringify(data));
+  }, [data]);
+
+  
+  const [installed, setInstalled] = useState(false);
+
+  useEffect(() => {
+    const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
+    if (installedApps.includes(app.id)) {
+      setInstalled(true);
+    }
+  }, [app.id]);
+
+  const handleInstall = () => {
+    toast.success(`${app.title} Installed Successfully!`);
+    setInstalled(true);
+
+    const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
+    if (!installedApps.includes(app.id)) {
+      installedApps.push(app.id);
+      localStorage.setItem("installedApps", JSON.stringify(installedApps));
+    }
+  };
+
+  
   const sortedRatings = [...app.ratings].sort((a, b) => {
     const numA = parseInt(a.name);
     const numB = parseInt(b.name);
@@ -40,10 +69,11 @@ function AppDetails() {
 
   return (
     <div className="bg-gray-100">
-    
+      <Toaster position="top-right" />
+
       <div className="md:p-20 p-10 md:flex items-center gap-10">
         <div className="w-[300px] h-[300px] bg-white flex justify-center items-center">
-          <img className="w-[220px] h-[220px]" src={app.image} alt="" />
+          <img className="w-[220px] h-[220px]" src={app.image} alt={app.title} />
         </div>
 
         <div>
@@ -75,17 +105,22 @@ function AppDetails() {
             </div>
           </div>
 
-          <button className="btn btn-accent mt-5 md:mt-0 text-white bg-[#00D390]">
-            Install Now - {app.size} MB
+          <button
+            onClick={handleInstall}
+            disabled={installed}
+            className={`btn mt-5 md:mt-0 text-white ${
+              installed
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-[#00D390] hover:bg-[#06ba7e]"
+            }`}
+          >
+            {installed ? "Installed" : `Install Now - ${app.size} MB`}
           </button>
         </div>
       </div>
 
-      
-      <div className=" md:p-10 p-5 rounded-2xl shadow-md md:mx-20 mb-10">
-        <h2 className="text-2xl font-semibold mb-5">
-          Ratings
-        </h2>
+      <div className="md:p-10 p-5 rounded-2xl shadow-md md:mx-20 mb-10 bg-white">
+        <h2 className="text-2xl font-semibold mb-5">Ratings</h2>
 
         <ResponsiveContainer width="100%" height={300}>
           <BarChart
@@ -103,7 +138,6 @@ function AppDetails() {
         </ResponsiveContainer>
       </div>
 
-     
       <div className="md:px-20 px-10 pb-5">
         <h1 className="text-2xl font-bold pb-4">Description :</h1>
         <p>{app.description}</p>
