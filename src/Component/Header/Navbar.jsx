@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../../assets/logo.png'
 import Github from '../../assets/icons8-github-logo-30.png'
-import { Link } from 'react-router';
+import { NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
@@ -17,21 +17,83 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><Link to={'/'}>Home</Link></li>
-                            <li><Link to={'/Apps'}>Apps</Link></li>
-                            <li><Link to={'/Installation'}>Installation</Link></li>
+                            <li>
+                                <NavLink
+                                    to="/"
+                                    className={({ isActive }) =>
+                                        isActive ? "underline underline-offset-4 font-bold" : ""
+                                    }
+                                >
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/Apps"
+                                    className={({ isActive }) =>
+                                        isActive ? "underline underline-offset-4 font-bold" : ""
+                                    }
+                                >
+                                    Apps
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/Installation"
+                                    className={({ isActive }) =>
+                                        isActive ? "underline underline-offset-4 font-bold" : ""
+                                    }
+                                >
+                                    Installation
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
-                    <Link to={'/'} className="btn btn-ghost text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent flex items-center gap-2">
+
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "underline underline-offset-4 font-bold btn btn-ghost text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent flex items-center gap-2"
+                                : "btn btn-ghost text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent flex items-center gap-2"
+                        }
+                    >
                         <img className='w-[40px]' src={Logo} alt="Logo" /> HERO.IO
-                    </Link>
+                    </NavLink>
                 </div>
 
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><Link to={'/'}>Home</Link></li>
-                        <li><Link to={'/Apps'}>Apps</Link></li>
-                        <li><Link to={'/Installation'}>Installation</Link></li>
+                        <li>
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) =>
+                                    isActive ? "underline underline-offset-4 font-bold" : ""
+                                }
+                            >
+                                Home
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/Apps"
+                                className={({ isActive }) =>
+                                    isActive ? "underline underline-offset-4 font-bold" : ""
+                                }
+                            >
+                                Apps
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/Installation"
+                                className={({ isActive }) =>
+                                    isActive ? "underline underline-offset-4 font-bold" : ""
+                                }
+                            >
+                                Installation
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
 
