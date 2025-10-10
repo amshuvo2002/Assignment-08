@@ -89,17 +89,14 @@ const Installation = () => {
                 <div>
                   <h1 className="text-xl font-bold">{app.title}</h1>
                   <div className="flex justify-around mt-5">
-                    {/* Downloads */}
                     <div className="flex justify-between gap-2 p-2 rounded-sm text-[#00D390] bg-[#F1F5E8]">
                       <img className="w-[20px]" src={Download} alt="Downloads" />
                       {app.downloads}
                     </div>
-                    {/* Ratings */}
                     <div className="flex justify-between gap-2 p-2 rounded-sm text-[#FF8811] bg-[#FFF0E1]">
                       <img className="w-[20px]" src={Star} alt="Ratings" />
                       {app.ratingAvg}
                     </div>
-                    {/* Size */}
                     <div className="flex justify-center items-center">
                       <p className="font-semibold text-gray-400">
                         {app.size} MB

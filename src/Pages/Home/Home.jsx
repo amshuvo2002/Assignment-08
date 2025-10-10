@@ -2,7 +2,7 @@ import React from 'react';
 import Bannar from '../Bannar/Bannar';
 import { Link, useLoaderData } from 'react-router';
 import BanarApp from '../Banar-App/BanarApp';
-import Allapps from '../All-Apps/Allapps';
+
 
 
 
